@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        
+        <img src="~/image/pic5.JPG" class="" alt="..." style=width:100% />
+        
+    </div>
+</div>
+
+
+<body>
+    <div class="container">
+        <div class="card-group">
+            <div class="card">
+                <img src="~/image/pic3.JPG" class="card-img-top" alt="..."style= height:85%>
+                <div class="card-body">
+               
+
+                    <button type="button" class="btn btn-warning"> @Html.ActionLink("Learn more", "About", "Home")</button>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="~/image/pic2.JPG" class="card-img-top" alt="..." style= height:85% />
+               
+                <div class="card-body">
+
+                    <button type="button" class="btn btn-warning">@Html.ActionLink("Register Here", "Create", "Applicant")</button>
+
+
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="~/image/pic1.JPG" class="card-img-top" alt="..." style= height:85% />
+                <div class="card-body">
+                  
+                    <button type="button" class="btn btn-warning">@Html.ActionLink("Apply", "Index", "Job")</button> 
+                </div>
+            </div>
+        </div>
+
+       
+    </div>
+</body>

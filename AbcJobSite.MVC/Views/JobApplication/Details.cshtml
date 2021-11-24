@@ -1,0 +1,42 @@
+﻿@model AbcJobSite.Model.JobApplicationDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>JobApplicationDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicantId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicantId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTimeNow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTimeNow)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
